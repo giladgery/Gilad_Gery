@@ -1,109 +1,114 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/HomePage.css">
+    <link rel="stylesheet" type="text/css" href="/static/Days.css">
     <title>המלצות לשביל ישראל</title>
 </head>
 <body>
-    <form method="post" action="./Routes.html">
-    <div class="container">
+    <form method="post" action="/submit-form">
+    <div class="container1">
         <div class="topnav">
-            <a class="active" href="HomePage.html">דף הבית</a>
-            <a href="Routes.html">מסלולים</a>
-            <a href="Pictures.html">תמונות</a>
+            <a class="active" href="/">דף הבית</a>
+            <a href="/routes">מסלולים</a>
+            <a href="/pictures">תמונות</a>
+            <a href="/allroutes">לכל המסלולים</a>
+            <a href="/signup">להרשמה לאתר</a>
           </div>
-        <div class="header">
+        <div class="header1">
             <center><h1 style="color: blue;">ברוכים הבאים לאתר הטיולים של שביל ישראל</h1></center>
             <center><h2 style="color:orange" class="anim">בחרו אזור טיול</h2></center>
         </div>
+
         <div class="one">
-            <label for="CARMEL">
-            <img src="../תמונות/CARMEL.jpg" alt="חוף הכרמל" height="200" class="center">
+            <label for="carmelinput">
+            <img src="/CARMEL.jpg" alt="חוף הכרמל" height="200" class="center" id="carmelimg">
             <center>
                 <p>חוף הכרמל</p>
-                <input type="radio" id="CARMEL" name="Erea" value="HOFCARMEL" class="Send_data  input-hidden">
+                <input type="radio" id="carmelinput" name="area" value="HOFCARMEL" class="Send_data  input-hidden">   
             </center>
              </label>
         </div>
         <div class="two">
             <label for="GALIL">
-            <img src="../תמונות/GALIL.jpg" alt="הגליל" height="200" class="center">
+            <img src="/GALIL.jpg" alt="הגליל" height="200" class="center" id="galilimg">
             <center>
                 <p>הגליל</p>
-                <input type="radio" id="GALIL" name="Erea" value="GALIL" class="Send_data  input-hidden">
+                <input type="radio" id="GALIL" name="area" value="GALIL" class="Send_data  input-hidden">
                 </label>
             </center>
         </div>
         <div class="three">
             <label for="GOLAN">
-            <img src="../תמונות/GOLAN.jpg" alt="הגולן" height="200" class="center">
+            <img src="/GOLAN.jpg" alt="הגולן" height="200" class="center" id="golanimg">
             <center>
                 <p>הגולן</p>
-                <input type="radio" id="GOLAN" name="Erea" value="GOLAN" class="Send_data  input-hidden">
+                <input type="radio" id="GOLAN" name="area" value="GOLAN" class="Send_data  input-hidden">
                 </label>
             </center>
         </div>
         <div class="four">
             <label for="TZFONNEG">
-            <img src="../תמונות/TZFONNEG.webp" alt="צפון הנגב" height="200" class="center">
+            <img src="/TZFONNEG.webp" alt="צפון הנגב" height="200" class="center" id="tzfonnegevimg">
             <center>
                 <p>צפון הנגב</p>
-                <input type="radio" id="TZFONNEG" name="Erea" value="TZFONNEG" class="Send_data  input-hidden">
+                <input type="radio" id="TZFONNEG" name="area" value="TZFONNEG" class="Send_data  input-hidden">
                 </label>
             </center>
         </div>
         <div class="five">
             <label for="JERUSALEM">
-            <img src="../תמונות/JERUSALEM.jpg" alt="ירושלים" height="200" class="center">
+            <img src="/JERUSALEM.jpg" alt="ירושלים" height="200" class="center" id="jerusalemimg">
             <center>
                 <p>ירושלים</p>
-                <input type="radio" id="JERUSALEM" name="Erea" value="JERUSALEM" class="Send_data  input-hidden">
+                <input type="radio" id="JERUSALEM" name="area" value="JERUSALEM" class="Send_data  input-hidden">
                 </label>
             </center>
         </div>
         <div class="six">
             <label for="CENTER">
-            <img src="../תמונות/CENTER.jpg" alt="המרכז" height="200" class="center">
+            <img src="/CENTER.jpg" alt="המרכז" height="200" class="center" id="centerimg">
             <center>
                 <p>המרכז</p>
-                <input type="radio" id="CENTER" name="Erea" value="CENTER" class="Send_data  input-hidden">
+                <input type="radio" id="CENTER" name="area" value="CENTER" class="Send_data  input-hidden">
                 </label>
             </center>
         </div>
         <div class="seven">
             <label for="EILAT">
-            <img src="../תמונות/EILAT.jpg" alt="הרי אילת" height="200" class="center">
+            <img src="/EILAT.jpg" alt="הרי אילת" height="200" class="center" id="eilatimg">
             <center>
                 <p>הרי אילת</p>
-                <input type="radio" id="EILAT" name="Erea" value="EILAT" class="Send_data  input-hidden">
+                <input type="radio" id="EILAT" name="area" value="EILAT" class="Send_data  input-hidden">
                 </label>
             </center>
         </div>
         <div class="eight">
             <label for="ARAVA">
-            <img src="../תמונות/ARAVA.jpg" alt="הערבה" height="200" class="center">
+            <img src="/ARAVA.jpg" alt="הערבה" height="200" class="center" id="aravaimg">
             <center>
                 <p>הערבה</p>
-                <input type="radio" id="ARAVA" name="Erea" value="ARAVA" class="Send_data  input-hidden">
+                <input type="radio" id="ARAVA" name="area" value="ARAVA" class="Send_data  input-hidden">
                 </label>
             </center>
         </div>
         <div class="nine">
             <label for="NEGEV">
-            <img src="../תמונות/NEGEV.jpg" alt="הנגב" height="200" class="center">
+            <img src="/NEGEV.jpg" alt="הנגב" height="200" class="center" id="negevimg">
             <center>
                 <p>הנגב</p>
-                <input type="radio" id="NEGEV" name="Erea" value="NEGEV" class="Send_data  input-hidden">
+                <input type="radio" id="NEGEV" name="area" value="NEGEV" class="Send_data  input-hidden">
                 </label>
             </center>
         </div>
         <div class="footer">
             <center><h2 style="color:orange" class="anim">בחרו את זמן הטיול</h2></center>
             <div class="slidecontainer">
-                <input type="range" min="1" max="12" value="50" class="slider" id="myRange">
+                <input type="range" min="1" max="12" name = "len" value="50" class="slider" id="myRange">
                 <center>
                     <p> זמן (בשעות) :<span id="demo"></span></p>
                 </center>

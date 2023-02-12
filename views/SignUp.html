@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/Days.css">
+        <title>המלצות לשביל ישראל</title>
+    </head>
+  <body>
+    <div class="signcontainer">
+        <div class="topnav">
+            <a href="/">דף הבית</a>
+            <a href="/routes">מסלולים</a>
+            <a href="/pictures">תמונות</a>
+            <a  class="active" href="/signup">להרשמה לאתר</a>
+          </div>
+        <h1 class="signtitle">הרשמה לאתר</h1>
+        <form method="post" action="/signup-submit">
+          <label for="username" class="signuplable1">שם משתמש</label> <br>
+          <input type="text" id="username" name="username" class="signupinput1">
+          <br>
+          <br>
+          <label for="password" class="signuplable2">סיסמא</label> <br>
+          <input type="password" id="password" name="password" class="signupinput2">
+          <br>
+          <br>
+          <label for="email" class="signuplable3">מייל</label> <br>
+          <input type="email" id="email" name="email" class="signupinput3">
+          <br>
+          <br>
+          <label for="options" class="signuplable4">אזור מגורים</label> <br>
+          <select id="options" name="options" class="signupinput4">
+            <option value="1">צפון</option>
+            <option value="2">חיפה והקריות</option>
+            <option value="3">חוף הכרמל</option>
+            <option value="4">השרון</option>
+            <option value="5">המרכז</option>
+            <option value="6">השפלה</option>
+            <option value="7">ירושלים והסביבה</option>
+            <option value="8">הנגב</option>
+            <option value="9">אילת והערבה</option>
+          </select>
+          <br>
+          <br>
+          <label for="birthdate" class="signuplable5">תאריך לידה</label> <br>
+          <input type="date" id="birthdate" name="birthdate" class="signupinput5">
+          <br>
+          <br>
+          <input type="submit" value="שלח" class="signupsubmit">
+        </form>
+    </div>
+  </body>
+</html>
